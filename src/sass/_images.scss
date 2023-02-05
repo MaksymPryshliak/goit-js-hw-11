@@ -1,0 +1,147 @@
+body {
+   background-color: #cfdadf
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    background-color: #92abb8;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.search-form__input {
+    padding: 8px;
+    border-radius: 15px;
+    border: 0px;
+    width: 300px;
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.search-form__button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 0px;
+    margin-left: 20px;
+    background-color: #e7ecef;
+    transition: background-color 250ms;
+    &:hover, 
+    &:focus {
+        background-color: #6a818e;
+        color: #fff;
+    }
+}
+
+.load-more {
+    margin: 0 auto;
+    padding: 10px;
+    width: 200px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #e7ecef;
+    transition: background-color 250ms;
+    &:hover, 
+    &:focus {
+        background-color: #6a818e;
+        color: #fff;
+    }
+}
+
+.gallery-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.gallery {
+    display: flex;
+    margin-left: -15px;
+    padding-top: 65px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery__link {
+    margin-top: 15px;
+    margin-left: 15px;
+    min-width: 360px;
+    flex-basis: calc((100% - 60px)/ 3);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 500ms;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.07);
+    }
+}
+
+.photo-card {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        display: block;
+        height: 30vh;
+        object-fit: cover;
+    }
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+}
+
+
+
+// .gallery {
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     margin-left: -20px;
+//     padding-top: 60px;
+//     display: flex;
+
+// }
+
+// .gallery__link {
+//     width: calc((100% - 45px)/3);
+//     margin-top: 20px;
+//     margin-left: 20px;
+//     min-width: 150px;
+// }
+
+
+// img {
+//     height: 40vh;
+//     object-fit: cover;
+//     display: block;
+// }
+
+// .gallery-item{
+//     flex-direction: column;
+//     justify-content: space-evenly;
+//     display: flex;
+// }
+
+

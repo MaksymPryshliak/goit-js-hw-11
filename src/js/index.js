@@ -55,6 +55,14 @@ loadMoreBtn.addEventListener('click', (evt) => {
       imagesListMaker(findedData.hits);
       loadMoreBtn.style.display = 'block';
       lightbox.refresh();
+
+      const totalPages = Math.ceil(findedData.totalHits / 27);
+      if (totalPages >= 2) {
+        Notiflix.Notify.info(` ${pageNumber} of ${totalPages} pages`)
+      }
+      if (pageNumber === totalPages) {
+        loadMoreBtn.style.display = 'none';
+      }
     }
   });
 });

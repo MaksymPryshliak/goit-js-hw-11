@@ -33,7 +33,7 @@ searchFormBtn.addEventListener('click', evt => {
         Notiflix.Notify.success(
           `Hooray! We found ${findedData.totalHits} images.`
         );
-        if (findedData.totalHits.length > 27) {
+        if (findedData.totalHits > 27) {
           loadMoreBtn.style.display = 'block';
         }
         lightbox.refresh();

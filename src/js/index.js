@@ -26,12 +26,16 @@ searchFormBtn.addEventListener('click', evt => {
         Notiflix.Notify.failure(
           'Sorry, there are no images matching your search query. Please try again.'
         );
-      } else {
+        loadMoreBtn.style.display = 'none';
+      }
+      else {
         imagesListMaker(findedData.hits);
         Notiflix.Notify.success(
           `Hooray! We found ${findedData.totalHits} images.`
         );
-        loadMoreBtn.style.display = 'block';
+        if (findedData.hits.length > 27) {
+          loadMoreBtn.style.display = 'block';
+        }
         lightbox.refresh();
       }
     });

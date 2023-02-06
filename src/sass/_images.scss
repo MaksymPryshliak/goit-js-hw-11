@@ -31,6 +31,7 @@ body {
     margin-left: 20px;
     background-color: #e7ecef;
     transition: background-color 250ms;
+    cursor: pointer;
     &:hover, 
     &:focus {
         background-color: #6a818e;
@@ -47,6 +48,7 @@ body {
     border: 0px;
     background-color: #e7ecef;
     transition: background-color 250ms;
+    cursor: pointer;
     &:hover, 
     &:focus {
         background-color: #6a818e;
